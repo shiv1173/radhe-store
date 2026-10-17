@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff7a18" />
+    <title>Radhe Store</title>
+    <meta
+      name="description"
+      content="Radhe Store - modern shopping app for fashion, home, and essentials."
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-badge">R</div>
+        <div>
+          <p class="eyebrow">Official</p>
+          <h1>Radhe Store</h1>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#offers">Offers</a>
+        <a href="#about">About</a>
+      </nav>
+      <button class="cart-button" id="cartToggle" aria-label="Open cart">
+        <span>Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow accent">Fresh arrivals</p>
+          <h2>Shop smarter. Style better.</h2>
+          <p>
+            Discover trending essentials, home picks, everyday favorites, and premium
+            lifestyle products crafted for modern living.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="primary-btn">Shop Now</a>
+            <a href="#offers" class="secondary-btn">View Deals</a>
+          </div>
+          <ul class="hero-metrics">
+            <li><strong>25k+</strong><span>Happy Customers</span></li>
+            <li><strong>1200+</strong><span>Products</span></li>
+            <li><strong>4.8/5</strong><span>Ratings</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="product-showcase">
+            <div class="showcase-card large">
+              <span class="tag">Best Seller</span>
+              <h3>Urban Smart Watch</h3>
+              <p>₹3,499</p>
+            </div>
+            <div class="showcase-card small">
+              <span class="tag alt">New</span>
+              <h3>Classic Speaker</h3>
+              <p>₹2,199</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-strip" id="offers">
+        <div>Free shipping on orders above ₹999</div>
+        <div>Easy 7-day returns</div>
+        <div>Secure checkout</div>
+      </section>
+
+      <section class="products-section" id="products">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow accent">Popular picks</p>
+            <h3>Featured Products</h3>
+          </div>
+          <div class="filter-group" id="categoryFilters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fashion">Fashion</button>
+            <button class="filter-btn" data-filter="home">Home</button>
+            <button class="filter-btn" data-filter="electronics">Electronics</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-live="polite">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-btn" id="cartClose" aria-label="Close cart">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subtotal">₹0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Delivery</span>
+          <strong id="delivery">₹0</strong>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <strong id="total">₹0</strong>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+      </div>
+    </aside>
+
+    <section class="about" id="about">
+      <div class="about-card">
+        <p class="eyebrow accent">Why choose us</p>
+        <h3>Trusted by shoppers who value quality, speed, and style.</h3>
+        <p>
+          Radhe Store blends affordable pricing with premium quality, ensuring a simple,
+          secure, and delightful shopping experience for every customer.
+        </p>
+      </div>
+    </section>
+
+    <div class="toast" id="toast">Added to cart</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "Radhe Store",
+  "short_name": "RadheStore",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff9f3",
+  "theme_color": "#ff7a18",
+  "description": "Radhe Store shopping app",
+  "icons": []
+}
